@@ -1,6 +1,6 @@
 body {
-  color:red;
-}
 li {
-  
+  display: inline block;
+  color: white;
+  background-color: #6F4242;
 }
