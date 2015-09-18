@@ -1,6 +1,25 @@
-body {
-li {
-  display: inline block;
-  color: white;
+.menubar {
   background-color: #6F4242;
+  color: #EFEBD6;
+  text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+  display: inline;
+}
+h2 {
+  font-family: fantasy;
+}
+.pakalpojumi {
+  background-color: #EFEBD6;
+  font-family: Verdana;
+  color: grey;
+}
+div h3 {
+  color: black;
+  font-family:Tahoma sans-serif;
 }
