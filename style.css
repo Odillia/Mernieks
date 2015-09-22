@@ -1,34 +1,46 @@
-.menubar {
-  background-color: #6F4242;
-  color: #EFEBD6;
-  text-decoration: none;
+.header {
+  border: 1px solid #0000ff;
+  background-color: #302013;
 }
-.menubar img{
+.logo {
   float: left;
+  clear: both; /* где писать clear:both */
 }
-ul {
+.navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-li {
+.navigation li {
   display: inline;
   text-align: right;
 }
-h2 {
+.slider .title1 .title2 {
+  background-color: black;
+  color: white;
+}
+/* сделать прозрачность фона и анимацию при наведении мыши */
+.main-title {
+  width: 0px;
+  height: 0px;
+  background-color: #fbe3cf;
+  color: #49311C;
   font-family: fantasy;
 }
-
+.horizontal-arrow {
+  border-bottom: 1px dashed; /* dashed - ? */
+  color: #49311C;
 }
 .pakalpojumi {
   background-color: #EFEBD6;
   font-family: Verdana;
   color: grey;
 }
-img.pakalpojumi {
-  float: left;
+.pakalpojumi h2 {
+  font-family: fantasy;
+  font-size: 20px;
 }
-div h3 {
+.pakalpojumi p {
+  font-family: serif;
   color: black;
-  font-family:Tahoma sans-serif;
 }
