@@ -3,6 +3,9 @@
   color: #EFEBD6;
   text-decoration: none;
 }
+.menubar img{
+  float: left;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -10,14 +13,20 @@ ul {
 }
 li {
   display: inline;
+  text-align: right;
 }
 h2 {
   font-family: fantasy;
+}
+
 }
 .pakalpojumi {
   background-color: #EFEBD6;
   font-family: Verdana;
   color: grey;
+}
+img.pakalpojumi {
+  float: left;
 }
 div h3 {
   color: black;
