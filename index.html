@@ -14,7 +14,7 @@
 
 <div class="navigation">
   <ul>
-      <li><a href="#Sākums">Sākums</a></li>
+      <li><a href="#Sākums">Sākums</a></li> <!-- должны ли эти названия соответствовать названиям div -->
       <li><a href="#Pakalpojumi">Pakalpojumi</a></li>
       <li><a href="#Par mums">Par mums</a></li>
       <li><a href="#Klienti">Klienti</a></li>
@@ -79,12 +79,14 @@
     </div>
 </div> <!--pakalpojumi-->
 
-    <div class= ""<h2>Pakalpojumu izcenojumi</h2>
-    <p> Par topogrāfiskās informācijas izsniegšanu (tajā skaitā ielu
+    <div class= "pakalpojumu izcenojums">
+      <h1>Pakalpojumu izcenojumi</h1>
+    <div class="left-table">
+          <p class="left-table"> Par topogrāfiskās informācijas izsniegšanu (tajā skaitā ielu
       sarkano <br>līniju), pieņemšanu, pārbaudi, ievadīšanu datu
       planšetēs,<br> ievadīšanu datubāzē,
       registrēšanu un nosūtīšanu pašvaldībai:</p>
-      <table>
+      <table class="left-table">
         <tbody>
           <tr>
             <td> Pakalpojumi</td>
@@ -108,9 +110,14 @@
           </tr>
         </tbody>
       </table> <hr>
-      <p><em> objektos kuros ir 2 (divas) vai mazāk apakšzemes komunikācijas, tāmei tiek piemērots koeficients 0,8</em></p>
-      <p>Par izpilddokumentācijas (tajā skaitā inženierkomunikāciju un ceļu izpildmērījumi) pieņemšanu, pārbaudi, ievadīšanu datu planšetēs, ievadīšanu datubāzē, registrēšanu un nosūtīšanu pašvadībai:</p>
-      <table>
+      <p id="undertable"><em> objektos kuros ir 2 (divas) vai mazāk apakšzemes komunikācijas,
+        tāmei tiek piemērots koeficients 0,8</em></p>
+      </div> <!--left-table-->
+
+<div class="right-table">
+      <p class="right-table">Par izpilddokumentācijas (tajā skaitā inženierkomunikāciju un ceļu izpildmērījumi) pieņemšanu,
+         pārbaudi, ievadīšanu datu planšetēs, ievadīšanu datubāzē, registrēšanu un nosūtīšanu pašvadībai:</p>
+      <table class="right-table">
         <tbody>
           <tr>
             <td>Pakalpojums</td>
@@ -135,8 +142,12 @@
             <td>objekta platība virs 25ha, papildus par katru nākamo ha </td>
             <td>0.07</td>
           </tr>
+        </tbody>
+      </table>
+</div>
+
 <div class="parmums">
-      <h2> Par mums </h2>
+      <h1> Par mums </h1>
       <p> Mūsu uzņēmuma veiksmīgas pastāvēšanas un darbības pamatā ir kvalitatīti padarīts darbs, lojalitāte pret katru klientu un demokrātiskas cenas kā
         uzņēmumiem, tā privātpersonām. Darbinieki mērniecības jomā strādā jau kopš 1996. gada, darba pieredze ir uzkrāta stradajot gan valsts iestādēs, gan privātos uzņēmumos,
         bet 2012. gadā apvienojotis mērniecības nozares speciālistiem tika nodibināts uzņēmums SIA "Ventspils mērnieks". Šajā īsajā uzņēmuma pastāvēšanas laikā, tas sevi ir pierādījis kā

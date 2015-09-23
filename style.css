@@ -1,21 +1,69 @@
+.bigblock {
+  border: 2px solid #0000ff <!--BORDER-->
+}
+
 .header {
-  border: 1px solid #0000ff;
+width: auto;
+height: 150px;
+  border: 2px solid #0000ff; <!--BORDER-->
   background-color: #302013;
 }
-.logo {
+
+.logo img {
+width: 100px;
+height: 150px;
+  background-color: #302013; <!--inherit??-->
   float: left;
   clear: both; /* где писать clear:both */
 }
+
 .navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
+
 .navigation li {
-  display: inline;
-  text-align: right;
+    float: right;
 }
-.slider .title1 .title2 {
+
+.navigation a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #302013;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #7A5230;
+}
+
+.language a:link, a:visited {
+    display: block;
+    width: 80px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #302013;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #7A5230;
+}
+
+
+
+
+p .slider {
   background-color: black;
   color: white;
 }
@@ -30,6 +78,11 @@
 .horizontal-arrow {
   border-bottom: 1px dashed; /* dashed - ? */
   color: #49311C;
+}
+.bigblock h1 {
+  text-transform: uppercase;
+  color: #7a5230;
+  font-family: sans-serif;
 }
 .pakalpojumi {
   background-color: #EFEBD6;
