@@ -19,17 +19,21 @@ height: 150px;
   float: left;
   clear: both; /* где писать clear:both */
 }
-.navigation ul {
+.menu {
+  width: 700px;
+  float:left;
+  border-left: solid;
+}
+.menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-.navigation li {
-    float: right;
-    clear: both;
+.menu li {
+    float: left;
 }
-.navigation a:link, a:visited {  /*можно ли сделать это для всех а в классе header или navigation */
+.menu a:link, a:visited {
     display: block;
     width: 120px;
     font-weight: bold;
@@ -39,15 +43,13 @@ height: 150px;
     padding: 4px;
     text-decoration: none;
 }
-.navigation a:hover, a:active {
+.menu a:hover, a:active {
     background-color: #5b4d3b;
 }
-.v_line {       /* border line ??? */
-  width:1px;
-  height:100%;
-  color:FFFFFF;
-  border-left: solid
-  }
+.language {
+  width: 200px;
+  float:right;
+}
 .language ul {
   list-style-type: none;
   margin: 0;
@@ -57,7 +59,6 @@ height: 150px;
 .language li {
   display:block;
   float: right;
-  clear:both;
 }
 .language a:link, a:visited {
 width: 37px;
@@ -104,6 +105,56 @@ p .slider {
   font-family: sans-serif;
   text-align: center;
 }
+.white-special-background{
+  background-color: grey;
+  padding: 10px 50px;
+}
+
+.sub-conteiner-header-block {
+  border-bottom: 1px black dashed;
+  height: 60px;
+}
+.sub-conteiner-header-block h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+.service-block{
+  width: 372px;
+  height: 300px;
+  background-color: green;
+  margin: 10px;
+}
+
+.service-block > div {
+  float: left;
+  height: inherit;
+  background-color: red;
+}
+.service-block-icon-block {
+  width: 70px;
+}
+.service-block-content-block {
+  width: 100px;
+  margin-left: 10px;
+}
+.service-block-content-block h2{
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  margin-top: 0px;
+}
+.service-block-center{
+  margin: 0px 32px;
+}
+
+.serice-block-content-block hr {
+  width: 15px;
+}
+.line {
+  border-bottom: 1px solid black;
+  width: 50px;
+}
+
 .pakalpojumi {
   background-color: #EFEBD6;
   font-family: Verdana;
@@ -118,9 +169,4 @@ p .slider {
   color: black;
 }
 .pakalpojumi img {
-  float: left;
-}
-.geodezija .mernieciba .zemesieriiba {
-  float: left;
-  display: inline-block;
-}
+  float: left;}
