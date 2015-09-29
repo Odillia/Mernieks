@@ -92,46 +92,53 @@
 .services {
   font-family: "Open Sans";
   background-color: blue;
-  padding: 10px;
-  clear: both;
+  padding: 40px 50px 0px 100px; /* right=50px, margin-right=50px (service-block)*/
 }
-.services-conteiner {
-  width: auto;
-  height: 700px;
-  padding: 50px;
-  background-color: grey;
-}
-.sub-conteiner-header-block {
+.services .sub-conteiner-header-block {
   border-bottom: 1px #473a2d dashed;
-  height: 60px;
+  height: 70px;
   background-color: yellow;
 }
-.sub-conteiner-header-block h1{
+.services .sub-conteiner-header-block h1 {
   text-align: center;
   text-transform: uppercase;
   color: #473a2d
 }
-.service-block {
-  width: 472px;
-  height: 300px;
-  background-color: green;
-  margin: 10px;
-  padding: 2px;
+
+
+.services .services-content {
+  width: 1115px;
+  height: 550px;
+  background-color: grey;
 }
-.service-block-icon-block {
-  width: 72px;
-  height: inherit;
+.services .services-content .service-block {
+  width: 200px;
+  height: 100px;
+  margin-right: 10px;
+  padding: 2px;
+  background-color: green;
+}
+.services .services-content div {
+  display: block;
+  float:left;
+  clear: both;
+  position: relative;
+}
+.services .services-content .service-block div {
+  display: inline;
+  float:left;
+  clear: both;
+  position: relative;
+}
+.services .services-content .service-block .service-block-icon-block {
+  width: 30px;
+  height: 100px;
   background-color: white;
 }
-.service-block-content-block {
-  width: 200px;
-  height: inherit;
+.services .services-content .service-block .service-block-content-block {
+  width: 100px;
+  height: 80px;
   margin-left: 10px;
-  background-color: brown;
-}
-.service-block-content-block h2{
-  text-transform: uppercase;
-  font-size: 12px;
-  color: white;
-  margin-top: 0px;
+  background-color: red;
+  padding: 2px;
 }
