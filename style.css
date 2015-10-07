@@ -1,172 +1,370 @@
-.bigblock {
-  border: 2px solid #0000ff /*BORDER*/
+body {
+  font-family: "Open Sans";
 }
-.header {
-width: auto;
-height: 150px;
-  border: 2px solid #0000ff; /*BORDER*/
-  background-color: #473a2d;
+.clear::before,
+.clear:after {
+  content: "";
+  display: table;
 }
-.logo {
-  width: 100%;
-  height: 115px;
-  background-color: #473a2d;
+.clear:after {
+  clear: both;
 }
-.logo img {
-  width: 113px;
-  height: 100%;
-  background-color: #473a2d; /*inherit??*/
+.float-left {
   float: left;
-  clear: both; /* где писать clear:both */
+}
+.float-right {
+  float: right;
+}
+#header {
+  width: 1280px;        /*нужно ли задавать ширину?*/
+  height: 95px;
+  background-color: #473a2d;
+}
+#logo {
+  width: 150px;
+  height: 52px;
+  padding: 5px 100px 10px 100px;
+  background-color: #473a2d;
+  float: left;
+}
+.header-links {
+  width: 570px;
+  height: 55px;
+  float: left;
+  /*background-color: grey; /*color!*/
+  margin: 15px 50px 15px 250px;
+}
+.header-links .main-navigation {
+  width: 435px;
+  height: inherit;
+  /*background-color: green;*/
+  border-right: 1px solid #ffffff;
 }
 .menu {
-  width: 700px;
-  float:left;
-  border-left: solid;
+  padding: 5px 15px;
+  margin: 0px;
 }
 .menu ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
+    /*background-color: yellow;*/
 }
 .menu li {
-    float: left;
+  display: block;
+  float: left;
 }
-.menu a:link, a:visited {
+a:link, a:visited {
     display: block;
-    width: 120px;
-    font-weight: bold;
     color: #FFFFFF;
     background-color: #473a2d;
     text-align: center;
-    padding: 4px;
     text-decoration: none;
+    font-size: 12px;
+    padding: 15px;
 }
-.menu a:hover, a:active {
+a:hover, a:active {
     background-color: #5b4d3b;
 }
-.language {
-  width: 200px;
-  float:right;
-}
-.language ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.language li {
-  display:block;
+.language-bar {
   float: right;
+  /*background-color: red;*/
+  margin-top: -55px;
 }
-.language a:link, a:visited {
-width: 37px;
-height: 100%;
-background-color: #473a2d;
-color: #FFFFFF;
-text-align: center;
-display: block;
-padding: 4px;
-text-transform: uppercase;
-text-decoration: none;
+#slider {
+  width: 1280px;
+  height: 595px;
 }
-.language a:hover, a:active {
-  background-color: #5b4d3b;
+#slider img {
+  width: 1280px;
+  height: 595px;
 }
-
-
-p .slider {
-  background-color: black;
-  color: white;
+.transbox {
+  background-color: #000000;
+  opacity:0.7;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
 }
-/* сделать прозрачность фона и анимацию при наведении мыши */
-.main-title {
-  width: 0px;
-  height: 0px;
-  background-color: #fbe3cf;
-  color: #95782d;
-  font-family: sans-serif;
+#slider-title1 {
+  width: 200px;
+  font-size: 30px;
+  position: relative;
+  top: -380px;
+  left: 150px;
 }
-.h_line{
-  border-bottom: 1px dashed; /* dashed - ? */
-  color: #49311C;
-  width:100%;
-  height:1px;
-  background: #fbe3cf }
-}
-.slider img {
-  width: 100%;
-  height: 350px;
-}
-.bigblock h1 { /* все заголовки */
-  text-transform: uppercase;
-  color: #7a5230;
-  font-family: sans-serif;
-  text-align: center;
-}
-.white-special-background{
-  background-color: grey;
-  padding: 10px 50px;
-}
-
-.sub-conteiner-header-block {
-  border-bottom: 1px black dashed;
-  height: 60px;
-}
-.sub-conteiner-header-block h1{
-  text-align: center;
-  text-transform: uppercase;
-}
-.service-block{
-  width: 372px;
-  height: 300px;
-  background-color: green;
-  margin: 10px;
-}
-
-.service-block > div {
-  float: left;
-  height: inherit;
-  background-color: red;
-}
-.service-block-icon-block {
-  width: 70px;
-}
-.service-block-content-block {
-  width: 100px;
-  margin-left: 10px;
-}
-.service-block-content-block h2{
-  text-transform: uppercase;
+#slider-title2 {
+  width: 350px;
+  font-size: 16px;
+  position: relative;
+  top: -370px;
+  left: 150px;
   font-size: 18px;
-  color: white;
+}
+.transbox p {
+  color: #ffffff;
+  font-weight: lighter;
+  text-align: left;
+  padding: 10px 20px;
+}
+#main-content {
+  width: 1080px;
+  padding: 0px 100px;
+  /*background-color: grey;         /*Цвет!!!*/*/
+}
+.white-special-background {
+  background-image: url ("img/white_bg.png")
+}
+.brown-special-background {
+  background-image: url ("img/brown_bg.png")
+}
+.sub-container-header-block {
+  border-bottom: 1px #473a2d dashed;
+  height: 70px;
+  margin:40px 0px;
+  /*background-color: yellow;     /*Цвет!!!*/*/
+}
+.sub-container-header-block h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #473a2d;
+  font-size: 30px;
+  font-weight: lighter;
+}
+.services-container {
+  /*background-color: green;*/
+  width: 333px;
+  float: left;
+  height: auto;
+}
+#central-block {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.container-icon-block {
+  width: 60px;
+  height: inherit;
+  /*background-color: blue;*/
+  float: left;
+}
+.container-icon-block img {
   margin-top: 0px;
+  margin-left: 0px;
 }
-.service-block-center{
-  margin: 0px 32px;
+.container-content-block {
+  width: 260px;
+  /*background-color: white;*/
+  float: right;
+  height: inherit;
+  padding: 0px;
 }
-
-.serice-block-content-block hr {
-  width: 15px;
+.container-content-block h2 {
+  text-align: left;
+  text-transform: uppercase;
+  color: #473a15;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.container-content-block p {
+  text-align: left;
+  color: #473a15;
+  font-size: 14px;
 }
 .line {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #c7c4bd;
   width: 50px;
 }
-
-.pakalpojumi {
-  background-color: #EFEBD6;
-  font-family: Verdana;
-  color: grey;
+.prices-container-text {
+  width: 500px;
+  height: auto;
+  /*background-color: #9999ff;*/
 }
-.pakalpojumi h2 {
-  font-family: fantasy;
-  font-size: 20px;
+.left {
+  margin-right: 25px;
+  float: left;
 }
-.pakalpojumi p {
-  font-family: serif;
-  color: black;
+.right {
+  margin-left: 25px;
+  float: right;
 }
-.pakalpojumi img {
-  float: left;}
+.prices-container-text p {
+  text-align: left;
+  font-size: 16px;
+  color: #473a15;
+}
+.prices-container-table {
+  width: 500px;
+  height: auto;
+  /*background-color: #ff9999;*/
+  padding-top: 20px;
+}
+.prices-container-table table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-bottom: 1px solid #c7c4bd;
+  font-size: 14px;
+  color: #473a15;
+}
+.prices-container-table table th {          /*проверить есть ли линия у второй таблицы*/
+  border-bottom: 1px solid #c7c4bd;
+}
+.price {
+  text-align: center;
+  font-weight: bold;
+}
+.prices-container-table table tr.colored-bg{
+  background-color: #f2ebe1;
+}
+.table-row-title, .table-row-first {
+  text-align: left;
+  padding: 5px 40px 5px 20px;
+}
+.prices-container-table table th .price {
+  text-align:left;
+  font-weight: bold;
+  padding-right: 15px;
+}
+#under-table {
+  font-size: 10px;
+  color: #473a15;
+  font-style: italic;
+  padding-left: 20px;
+}
+table tr .table-row-strong {
+  border-top: 1px solid #c7c4bd;
+  font-weight: bold;
+}
+.about-us{
+  margin-top: 40px;
+}
+.about-us-text-block {
+  width: 1080px;
+  height: auto;
+  /*background-color: green;*/
+}
+.about-us-text-block p {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #eec4a0;
+}
+.personal-info-container{
+  width: 300px;
+  height: 350px;
+/*  margin: 40px 110px;*/
+  /*background-color: yellow;*/
+  text-align: center;
+}
+#person1 {
+  margin: 40px 120px 40px 100px;
+}
+#person2 {
+  margin: 40px 100px 40px 120px;
+}
+.personal-info-container img{
+  width: 200px;
+  border: 5px solid #97804e;
+  border-radius: 50%;
+}
+.personal-info-container h1{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #97804e;
+  line-height: 10px;
+}
+.about-us .tel, .about-us .email{
+  color: #97804e;
+}
+.personal-info-devider {
+  border-bottom: 1px solid #7e684d;
+  margin-bottom: 10px;
+}
+.certificates-container {
+  width: 500px;
+  height: 90px;
+  background-color: #624e36;
+  padding-left: 10px;
+}
+.one-certificate {
+  background-color: #624e36;
+  width: 222px;
+  padding: 15px 10px 15px 10px;
+}
+.one-certificate p {
+  font-size: 12px;
+  color: #ffffff;
+}
+.one-certificate img {
+  margin-right: 20px;
+  padding-top: 12px;
+}
+#certificate-person2 {
+  margin-left: 25%;
+  width: 200px;
+}
+.person-certificate-info {
+  width: 510px;
+  background-color: #eec4a0;
+  font-size: 15px;
+  color: #ffffff;
+}
+.contacts-map-container {
+  width: 360px;
+  height: auto;
+  /*background-color: green;*/
+}
+.contacts-map {
+  width: 350px;
+  height: 200px;
+  margin: 0 auto;
+  border: 5px solid #97804e;
+}
+.google-map {
+  width: 345px;     /* не сработало 100% */
+  height: 195px;
+}
+.contacts-info-container {
+  width: 270px;
+  height: auto;
+  /*background-color: red;*/
+  margin: 0px 40px;
+  text-align: center;
+}
+.contacts-info-container img {
+  padding-bottom: 20px;
+}
+.sia, .email, .adress, .city-code {
+  font-size: 12px;
+  color: #97804e;
+}
+.tel {
+  font-size: 12px;
+  color: #eacc8b;
+}
+.sia {
+  text-transform: uppercase;
+}
+.contact-form-container {
+  width: 370px;
+  height: auto;
+  /*background-color: blue;*/
+}
+.contact-form-container form input, .text-field {
+  background-color: #7f6c42;
+  border:none;
+  padding-left: 10px;
+}
+.firstname-field, .email-field {
+  width: 100px;
+  height: 30px;
+}
+.firstname-field {
+  margin-right: 30px;
+}
+.text-field {
+  margin-top: 30px;
+  width: 100%;
+  height: 100px;
+  resize: none;
+  box-sizing: border-box;
+}
+.form-title {
+  text-transform: uppercase;
+  color: #f9e09e;
+}
